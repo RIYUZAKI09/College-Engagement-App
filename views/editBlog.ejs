@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Blog</title>
+</head>
+<body>
+    <h1>Edit Blog here</h1>
+    <h2>Previous</h2>
+    <h2><%= val.title %> </h2>
+    <p><%= val.body %></p>
+
+    <h2>New</h2>
+
+    <form action="/blog/<%= val.id %> " method="post">
+        <input type="text" name="title">
+        <input type="text" name="body">
+        <button type="submit">Edit Blog Form</button>
+    </form>
+</body>
+</html>
